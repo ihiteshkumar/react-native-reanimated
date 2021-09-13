@@ -13,7 +13,7 @@ end
 rnVersion = reactVersion.split('.')[1]
 
 
-folly_prefix = "RCT-"
+folly_prefix = ""
 
 
 folly_flags = '-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DRNVERSION=' + rnVersion
