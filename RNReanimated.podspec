@@ -12,10 +12,8 @@ end
 
 rnVersion = reactVersion.split('.')[1]
 
-folly_prefix = ""
-if rnVersion.to_i >= 64
-  folly_prefix = "RCT-"
-end
+
+folly_prefix = "RCT-"
 
 
 folly_flags = '-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DRNVERSION=' + rnVersion
